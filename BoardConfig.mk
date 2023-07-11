@@ -1,4 +1,4 @@
-DEVICE_PATH := device/#Brand#/S98122AA1
+DEVICE_PATH := device/T-Mobile/S98122AA1
 # For building with TWRP minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
 # Architecture (arm64)
@@ -29,7 +29,7 @@ BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 TARGET_BOARD_PLATFORM := mt6833
 # Hack: prevent anti rollback
 PLATFORM_SECURITY_PATCH := 2099-12-31
-PLATFORM_VERSION := 16.1.0
+PLATFORM_VERSION := 12.0.0
 # TWRP Configuration
 TW_THEME := portrait_hdpi
 #TW_EXTRA_LANGUAGES := true #Only if you need it
@@ -54,8 +54,8 @@ BOARD_HAS_NO_REAL_SDCARD := true
 RECOVERY_SDCARD_ON_DATA := true
 #TW_INTERNAL_STORAGE_PATH := / 
 #TW_INTERNAL_STORAGE_MOUNT_POINT := / 
-TW_EXTERNAL_STORAGE_PATH := /sdcard
-TW_EXTERNAL_STORAGE_MOUNT_POINT := /sdcard
+TW_EXTERNAL_STORAGE_PATH := /sdcard/
+TW_EXTERNAL_STORAGE_MOUNT_POINT := /sdcard/
 # If your device has recovery as a second ramdisk of boot.img
 TW_HAS_NO_RECOVERY_PARTITION := true
 TW_FORCE_CPUINFO_FOR_DEVICE_ID := true
